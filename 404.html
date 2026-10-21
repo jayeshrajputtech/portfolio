@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Pod Not Found | Jayesh Rajput</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#090D16] text-slate-200 antialiased min-h-screen flex items-center justify-center p-4">
+  <div class="max-w-md w-full bg-slate-900/90 border border-rose-500/40 rounded-2xl p-6 text-center shadow-2xl backdrop-blur-xl">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-950/80 border border-rose-800 text-rose-400 font-mono text-xs mb-4">
+      <span>HTTP 404: ROUTE_NOT_FOUND</span>
+    </div>
+    <h1 class="text-4xl font-bold font-mono text-white tracking-tight">ErrImagePull</h1>
+    <p class="text-xs font-mono text-slate-400 mt-2">
+      The requested container image or route does not exist in the cluster ingress controller.
+    </p>
+    <div class="p-3 my-4 rounded-xl bg-slate-950 border border-slate-800 font-mono text-xs text-left text-slate-400 space-y-1">
+      <p class="text-rose-400">Error: Back-off pulling image "page/not-found:latest"</p>
+      <p class="text-slate-500">Status: Ingress 404 • Cluster: zs-prod-eks-01</p>
+    </div>
+    <a href="/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-mono text-xs font-semibold shadow-lg shadow-cyan-500/20 transition-all">
+      <span>&larr; Return to Control Plane</span>
+    </a>
+  </div>
+</body>
+</html>
